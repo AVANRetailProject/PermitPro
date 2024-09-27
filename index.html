@@ -35,6 +35,12 @@
             margin: 0;
         }
 
+        .cta-text {
+            font-size: 1.2rem;
+            margin-bottom: 10px;
+            color: #333;
+        }
+
         .access-window {
             background-color: #fff;
             padding: 30px;
@@ -84,6 +90,9 @@
         .capabilities ul {
             list-style-type: none;
             padding: 0;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
         }
 
         .capabilities li {
@@ -117,10 +126,15 @@
 
         <!-- Access Window Section -->
         <div class="access-window">
-            <h2>Connect to the PermitPro GPT</h2>
-            <input type="text" class="access-input" placeholder="Enter your project details..." />
-            <br>
-            <button class="access-button">Start Chat</button>
+            <h2>Get Started with PermitPro GPT</h2>
+            <p class="cta-text">Enter your name and email below to get access:</p>
+            
+            <form id="access-form">
+                <input type="text" id="name" class="access-input" placeholder="Your Name" required />
+                <input type="email" id="email" class="access-input" placeholder="Your Email" required />
+                <br>
+                <button type="submit" class="access-button">Submit</button>
+            </form>
         </div>
 
         <!-- Capabilities Section -->
@@ -134,6 +148,7 @@
                 <li>Track permit expirations and auto-renewals.</li>
                 <li>Sync with project management tools for seamless workflows.</li>
                 <li>Optimize budgets and suggest compliance alternatives.</li>
+                <li>Generate environmental and traffic impact studies.</li>
             </ul>
         </div>
 
@@ -142,5 +157,18 @@
         </footer>
     </div>
 
+    <script>
+        document.getElementById('access-form').addEventListener('submit', function(event) {
+            event.preventDefault();
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+
+            // This part should submit the data to a Google Sheet or database
+            // (You'll need a Google Apps Script or backend service here)
+
+            alert('Thank you, ' + name + '! You will be redirected to the GPT now.');
+            window.location.href = 'https://chatgpt.com/g/g-2MRKUwZUa-commercial-construction-permit-zoning-consultant';
+        });
+    </script>
 </body>
 </html>
