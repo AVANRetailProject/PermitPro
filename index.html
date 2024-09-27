@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>PermitPro - The Ultimate Construction Assistant</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f9;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .header {
+            padding: 20px 0;
+        }
+
+        h1 {
+            color: #1e3a8a;
+            font-size: 2.5rem;
+            margin: 0;
+        }
+
+        .access-window {
+            background-color: #fff;
+            padding: 30px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            margin: 20px 0;
+        }
+
+        .access-input {
+            width: 80%;
+            padding: 15px;
+            font-size: 1.1rem;
+            border: 2px solid #1e3a8a;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+
+        .access-button {
+            padding: 10px 20px;
+            background-color: #1e3a8a;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            font-size: 1.2rem;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .access-button:hover {
+            background-color: #3b82f6;
+        }
+
+        .capabilities {
+            background-color: #1e3a8a;
+            color: #fff;
+            padding: 30px;
+            border-radius: 10px;
+            margin: 30px 0;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .capabilities h2 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+
+        .capabilities ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .capabilities li {
+            margin: 10px 0;
+            font-size: 1.2rem;
+            display: flex;
+            align-items: center;
+        }
+
+        .capabilities li::before {
+            content: "✔️";
+            margin-right: 10px;
+            color: #22c55e;
+            font-size: 1.5rem;
+        }
+
+        footer {
+            margin-top: 40px;
+            font-size: 0.9rem;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="header">
+            <h1>Welcome to PermitPro</h1>
+            <p>Your Ultimate Commercial Construction Permit & Zoning Assistant</p>
+        </div>
+
+        <!-- Access Window Section -->
+        <div class="access-window">
+            <h2>Connect to the PermitPro GPT</h2>
+            <input type="text" class="access-input" placeholder="Enter your project details..." />
+            <br>
+            <button class="access-button">Start Chat</button>
+        </div>
+
+        <!-- Capabilities Section -->
+        <div class="capabilities">
+            <h2>What Can PermitPro Do for You?</h2>
+            <ul>
+                <li>Fast-track permitting with city-specific options.</li>
+                <li>Provide real-time zoning and regulatory updates.</li>
+                <li>Assist with variance negotiations and public hearings.</li>
+                <li>Analyze geospatial and environmental site impact.</li>
+                <li>Track permit expirations and auto-renewals.</li>
+                <li>Sync with project management tools for seamless workflows.</li>
+                <li>Optimize budgets and suggest compliance alternatives.</li>
+            </ul>
+        </div>
+
+        <footer>
+            © 2024 PermitPro. All rights reserved.
+        </footer>
+    </div>
+
+</body>
+</html>
